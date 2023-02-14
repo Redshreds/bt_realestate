@@ -22,11 +22,11 @@ def about(request):
     mvp_realtors = Realtor.objects.all().filter(is_mvp=True)
 
     context = {
-        'realtors': realtors,
+        'realtors': realtors
         'mvp_realtors': mvp_realtors
     }
 
-    return render(request, 'pages/about.html', context)
+    return render(request, 'pages/about.html')
 
 # Create your views here.
 # Create methods

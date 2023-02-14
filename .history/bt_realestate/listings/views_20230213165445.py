@@ -5,9 +5,9 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from .models import Listing #Goal is to fetch listings using model then insert into a template, allowing us to loop through and output the listings in the database
 
 def index(request):
-    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    listings = Listing.objects.all()
 
-    paginator =  Paginator(listings, 6)
+    paginator =  Paginator(listings, 2)
     page = request.GET.get('page')
     paged_listings = paginator.get_page(page)
 
