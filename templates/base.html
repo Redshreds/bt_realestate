@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +14,9 @@
         <!-- Lightbox -->
         <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
         
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BT Real Estate</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>BT Real Estate {% block title %}{% endblock %}</title>
 </head>
 <body>
     {% include 'partials/_topbar.html' %}
@@ -24,11 +26,10 @@
 
     {% include 'partials/_footer.html' %}
 
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/lightbox.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js'%} "></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js'%} "></script>
+    <script src="{% static 'js/lightbox.min.js'%} "></script>
+    <script src="{% static 'js/main.js'%} "></script>
 
 </body>
 </html>
-
