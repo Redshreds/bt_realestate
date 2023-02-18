@@ -182,3 +182,5 @@ venv
 /static
 .vscode
 .history
+/venv
+/.history
