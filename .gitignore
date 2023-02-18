@@ -173,3 +173,5 @@ cython_debug/
 
 /static
 /media
+/dist
+.history
