@@ -30,12 +30,10 @@ def contact(request):
     # send_mail(
     #   'Property Listing Inquiry',
     #   'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info',
-    #   'business.foo@gmail.com',
-    #   [realtor_email, 'techguyfooo@gmail.com'],
+    #   'business.bran@gmail.com',
+    #   [realtor_email, 'techguyinfo@gmail.com'],
     #   fail_silently=False
     # )
-
-    # https://docs.djangoproject.com/en/4.1/topics/email/
 
     messages.success(request, 'Your request has been submitted, a realtor will get back to you soon')
     return redirect('/listings/'+listing_id)

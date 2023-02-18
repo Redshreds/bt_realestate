@@ -35,8 +35,6 @@ def contact(request):
     #   fail_silently=False
     # )
 
-    # https://docs.djangoproject.com/en/4.1/topics/email/
-
     messages.success(request, 'Your request has been submitted, a realtor will get back to you soon')
     return redirect('/listings/'+listing_id)
   

@@ -157,4 +157,4 @@ EMAIL_HOST_USER=''
 EMAIL_HOST_PASSWORD=''
 EMAIL_USE_TLS=True
 
-# https://docs.djangoproject.com/en/4.1/topics/email/
+#https://docs.djangoproject.com/en/4.1/topics/email/
