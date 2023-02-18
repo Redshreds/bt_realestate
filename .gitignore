@@ -171,7 +171,14 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 
-/static
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
 /media
-/dist
+venv
+/static
+.vscode
 .history
