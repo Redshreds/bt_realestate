@@ -159,3 +159,5 @@ except ImportError:
     pass
 
 # https://docs.djangoproject.com/en/4.1/topics/email/
+
+#1.05
